@@ -1,0 +1,1938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>750</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>750</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>1024</width>
+    <height>750</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidgetMain">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="mainPage">
+       <property name="styleSheet">
+        <string notr="true">background-color: #131313;</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QWidget" name="widget_2" native="true">
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	border: none;
+	color: rgba( 255, 255, 255, 0.4);
+	width: 120px;
+	font: 15pt &quot;.Inter UI&quot;;
+	text-align: left;
+	margin: 10px 0 10px 30px;
+}
+
+QPushButton:checked{
+	color: #f0f0f0;
+}
+
+QPushButton:hover{
+	color: #f0f0f0;
+}
+
+#cerrarSesionBtn:hover{
+	background: #f5f5f5;
+	color: #181818;
+	border: #f5f5f5;	
+}
+
+#logoMenuImg{
+	width: 20px;
+	height: 20px;
+}
+
+#nombreLbl{
+	color: #f5f5f5;
+	height: 100px;
+}
+
+
+background-color: #131313;</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QPushButton" name="cobrarMenuBtn">
+               <property name="font">
+                <font>
+                 <family>.Inter UI</family>
+                 <pointsize>15</pointsize>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">margin-top: 50px;</string>
+               </property>
+               <property name="text">
+                <string>Cobrar</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <activeon>:/assets/assets/logo.png</activeon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="citasMenuBtn">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Citas</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="miembrosMenuBtn">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Clientes y 
+MIembros</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="serviciosMenuBtn">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Servicios</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="empleadosMenuBtn">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Empleados</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget" native="true">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QLabel" name="logoMenuImg">
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="text">
+                   <string>O</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="nombreLbl">
+                  <property name="font">
+                   <font>
+                    <family>Inter UI</family>
+                    <pointsize>15</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Emiliano C...</string>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>false</bool>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
+                  </property>
+                  <property name="textInteractionFlags">
+                   <set>Qt::NoTextInteraction</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="cerrarSesionBtn">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">text-align: center;
+border: 2px solid rgba(255,255,255,0.4);
+margin: 0px 15px 20px;
+padding: 5px;</string>
+               </property>
+               <property name="text">
+                <string>Cerrar sesión</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="font">
+             <font>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #f0f0f0;
+</string>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="CobrarServicios">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <widget class="QLabel" name="label">
+              <property name="geometry">
+               <rect>
+                <x>30</x>
+                <y>20</y>
+                <width>331</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Inter UI</family>
+                <pointsize>40</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+                <strikeout>false</strikeout>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background: none;</string>
+              </property>
+              <property name="text">
+               <string>Cobrar Servicio</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_2">
+              <property name="geometry">
+               <rect>
+                <x>30</x>
+                <y>100</y>
+                <width>151</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Inter UI</family>
+                <pointsize>15</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Seleccionar servicio:</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="resumen" native="true">
+              <property name="geometry">
+               <rect>
+                <x>440</x>
+                <y>100</y>
+                <width>381</width>
+                <height>471</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background: #1b1b1b;
+color: #f5f5f5;
+padding: 15px;
+border-radius: 8px;
+
+QPushButton{
+	color: red;
+}
+</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QLabel" name="label_4">
+                 <property name="font">
+                  <font>
+                   <family>Inter UI</family>
+                   <pointsize>20</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>Resumen</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="label_7">
+                   <property name="font">
+                    <font>
+                     <family>Inter UI</family>
+                     <pointsize>15</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Servicios</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="totalLbl_2">
+                   <property name="font">
+                    <font>
+                     <family>Inter UI</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Precio ($MXN)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QTableView" name="tableResumen">
+                 <property name="styleSheet">
+                  <string notr="true">color: white;</string>
+                 </property>
+                 <property name="selectionMode">
+                  <enum>QAbstractItemView::NoSelection</enum>
+                 </property>
+                 <property name="selectionBehavior">
+                  <enum>QAbstractItemView::SelectRows</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <spacer name="horizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="font">
+                    <font>
+                     <family>Inter UI</family>
+                     <pointsize>15</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Total:</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="totalLbl">
+                   <property name="font">
+                    <font>
+                     <family>Inter UI</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>$0.00</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cobrarBtn">
+                 <property name="font">
+                  <font>
+                   <pointsize>20</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background: #C2A062;
+/*#6F6545*/
+margin: 20px;
+color: #f5f5f5;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Cobrar</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QTableView" name="tableCitasCobro">
+              <property name="geometry">
+               <rect>
+                <x>30</x>
+                <y>130</y>
+                <width>391</width>
+                <height>331</height>
+               </rect>
+              </property>
+              <property name="selectionMode">
+               <enum>QAbstractItemView::SingleSelection</enum>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectRows</enum>
+              </property>
+              <property name="sortingEnabled">
+               <bool>true</bool>
+              </property>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+               <bool>true</bool>
+              </attribute>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="GestionarServicios">
+             <property name="styleSheet">
+              <string notr="true">#searchBar{
+	outline:none;
+outline: 0px;
+outline: none;
+outline-style: none;
+}
+
+#searchBar:focus{
+	outline:none;
+outline: 0px;
+outline: none;
+outline-style: none;
+}
+</string>
+             </property>
+             <widget class="QLabel" name="gestionarLbl">
+              <property name="geometry">
+               <rect>
+                <x>30</x>
+                <y>20</y>
+                <width>771</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Inter UI</family>
+                <pointsize>40</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+                <strikeout>false</strikeout>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background: rgba(0,0,0,0);</string>
+              </property>
+              <property name="text">
+               <string>Gestionar Miembros</string>
+              </property>
+             </widget>
+             <widget class="QFrame" name="horizontalFrame">
+              <property name="geometry">
+               <rect>
+                <x>570</x>
+                <y>80</y>
+                <width>231</width>
+                <height>42</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Inter UI</family>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background: none;
+border: none;
+
+</string>
+              </property>
+              <widget class="QPushButton" name="btnCrearMiembro">
+               <property name="geometry">
+                <rect>
+                 <x>170</x>
+                 <y>10</y>
+                 <width>43</width>
+                 <height>18</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #16b766;</string>
+               </property>
+               <property name="text">
+                <string>Crear</string>
+               </property>
+               <property name="icon">
+                <iconset resource="resource.qrc">
+                 <normaloff>:/assets/assets/logo.png</normaloff>:/assets/assets/logo.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="btnEditarMiembro">
+               <property name="geometry">
+                <rect>
+                 <x>69</x>
+                 <y>10</y>
+                 <width>81</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #161616;</string>
+               </property>
+               <property name="text">
+                <string>Ver/Editar</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="btnEliminarMiembro">
+               <property name="geometry">
+                <rect>
+                 <x>164</x>
+                 <y>10</y>
+                 <width>56</width>
+                 <height>18</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #ed6969	;</string>
+               </property>
+               <property name="text">
+                <string>Eliminar</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="btnDeseleccionar">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>151</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #161616;</string>
+               </property>
+               <property name="text">
+                <string>Deseleccionar todo</string>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QTableView" name="tableMiembro">
+              <property name="geometry">
+               <rect>
+                <x>30</x>
+                <y>130</y>
+                <width>771</width>
+                <height>591</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Inter UI</family>
+               </font>
+              </property>
+              <property name="acceptDrops">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <property name="sizeAdjustPolicy">
+               <enum>QAbstractScrollArea::AdjustToContents</enum>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <property name="alternatingRowColors">
+               <bool>false</bool>
+              </property>
+              <property name="selectionMode">
+               <enum>QAbstractItemView::MultiSelection</enum>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectRows</enum>
+              </property>
+              <property name="textElideMode">
+               <enum>Qt::ElideRight</enum>
+              </property>
+              <property name="showGrid">
+               <bool>false</bool>
+              </property>
+              <property name="sortingEnabled">
+               <bool>true</bool>
+              </property>
+              <attribute name="horizontalHeaderStretchLastSection">
+               <bool>true</bool>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="horizontalWidget" native="true">
+              <property name="geometry">
+               <rect>
+                <x>30</x>
+                <y>80</y>
+                <width>421</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="acceptDrops">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit:focus { border: none; }</string>
+              </property>
+              <widget class="QLineEdit" name="searchBar">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>10</y>
+                 <width>251</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::ClickFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">height: 25px;
+padding: 0px 5px;
+background: white;
+border-radius: 0px;
+font-size: 15;
+border: 1px solid #C2A062;
+</string>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="filtro">
+               <property name="geometry">
+                <rect>
+                 <x>250</x>
+                 <y>10</y>
+                 <width>121</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">height: 25px;
+padding: 0px 5px;
+background: white;
+border-radius: 0px;
+font-size: 15;
+border: 1px solid #C2A062;
+</string>
+               </property>
+               <property name="editable">
+                <bool>false</bool>
+               </property>
+               <property name="frame">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+              </widget>
+              <widget class="QPushButton" name="searchBtn">
+               <property name="geometry">
+                <rect>
+                 <x>370</x>
+                 <y>10</y>
+                 <width>41</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>25</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: #C2A062;
+border: 0px solid #C2A062;
+color: white;
+</string>
+               </property>
+               <property name="text">
+                <string>→</string>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QPushButton" name="searchBtnDel">
+              <property name="geometry">
+               <rect>
+                <x>450</x>
+                <y>90</y>
+                <width>41</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: #C2A062;
+border: 0px solid #C2A062;
+color: white;
+
+</string>
+              </property>
+              <property name="text">
+               <string>╳</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="popup" native="true">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>831</width>
+                <height>751</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(19, 19, 19, 0.8);</string>
+              </property>
+              <widget class="QWidget" name="formWidget_2" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>90</x>
+                 <y>160</y>
+                 <width>651</width>
+                 <height>411</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color:  #C2A062;
+border-radius: 10px;</string>
+               </property>
+               <widget class="QPushButton" name="pushButton">
+                <property name="geometry">
+                 <rect>
+                  <x>590</x>
+                  <y>0</y>
+                  <width>51</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Montserrat</family>
+                  <pointsize>30</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                  <kerning>true</kerning>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: white;
+</string>
+                </property>
+                <property name="text">
+                 <string>╳</string>
+                </property>
+               </widget>
+               <widget class="QWidget" name="formWidget_3" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>201</width>
+                  <height>411</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:  #9B804E;
+border-radius: 10px;</string>
+                </property>
+                <widget class="QPushButton" name="pushButton_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>590</x>
+                   <y>0</y>
+                   <width>51</width>
+                   <height>61</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Montserrat</family>
+                   <pointsize>30</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                   <kerning>true</kerning>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>╳</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="popupTitle">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>20</y>
+                   <width>161</width>
+                   <height>151</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Inter UI</family>
+                   <pointsize>30</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Ver / Editar</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="editButton">
+                 <property name="geometry">
+                  <rect>
+                   <x>20</x>
+                   <y>341</y>
+                   <width>161</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Inter UI</family>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #4F4228;
+border-radius: 0px;
+color: white;</string>
+                 </property>
+                 <property name="text">
+                  <string>Guardar Cambios</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="cancelButton">
+                 <property name="geometry">
+                  <rect>
+                   <x>20</x>
+                   <y>290</y>
+                   <width>161</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Inter UI</family>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white;
+border: 1px solid #4F4228;
+border-radius: 0px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Cancelar</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="addButton">
+                 <property name="geometry">
+                  <rect>
+                   <x>20</x>
+                   <y>340</y>
+                   <width>161</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Inter UI</family>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #4F4228;
+border-radius: 0px;
+color: white;</string>
+                 </property>
+                 <property name="text">
+                  <string>Añadir</string>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="formWidget_2" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>220</x>
+                  <y>70</y>
+                  <width>411</width>
+                  <height>311</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Inter UI</family>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">
+QLineEdit, QComboBox, QDateTimeEdit{
+	color: #9B804E;
+	background-color: white;
+	padding: 2px 10px;
+}
+
+QLabel{
+	font-weight: bold;
+	color: white;
+}
+
+color: white;
+
+</string>
+                </property>
+                <layout class="QFormLayout" name="popupLayout">
+                 <property name="sizeConstraint">
+                  <enum>QLayout::SetMaximumSize</enum>
+                 </property>
+                 <property name="fieldGrowthPolicy">
+                  <enum>QFormLayout::ExpandingFieldsGrow</enum>
+                 </property>
+                 <property name="labelAlignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="formAlignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                 </property>
+                </layout>
+               </widget>
+              </widget>
+              <widget class="QPushButton" name="hidePopUp">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>40</y>
+                 <width>821</width>
+                 <height>711</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border: 1px solid rgba(0,0,0,0);
+background-color: rgba(0,0,0,0);</string>
+               </property>
+               <property name="text">
+                <string>no Popup btn</string>
+               </property>
+              </widget>
+              <zorder>hidePopUp</zorder>
+              <zorder>formWidget_2</zorder>
+             </widget>
+             <zorder>searchBtnDel</zorder>
+             <zorder>horizontalWidget</zorder>
+             <zorder>gestionarLbl</zorder>
+             <zorder>horizontalFrame</zorder>
+             <zorder>tableMiembro</zorder>
+             <zorder>popup</zorder>
+            </widget>
+            <widget class="QWidget" name="GestionarCitas">
+             <widget class="QLabel" name="label_3">
+              <property name="geometry">
+               <rect>
+                <x>30</x>
+                <y>20</y>
+                <width>551</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Inter UI</family>
+                <pointsize>40</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+                <strikeout>false</strikeout>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background: none;</string>
+              </property>
+              <property name="text">
+               <string>Agendar Cita</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="formWidget_2" native="true">
+              <property name="geometry">
+               <rect>
+                <x>30</x>
+                <y>110</y>
+                <width>341</width>
+                <height>421</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+QLineEdit, QComboBox, QDateTimeEdit{
+height: 25px;
+padding: 0px 5px;
+background: white;
+border-radius: 0px;
+font-size: 15;
+border: 1px solid #C2A062;
+}
+
+QLabel{
+	font-weight: bold;
+	color: #161616;
+}
+
+color: white;
+</string>
+              </property>
+              <widget class="QLabel" name="label_5">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>51</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Cliente:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_10">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>160</y>
+                 <width>65</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Servicios:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_11">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>40</y>
+                 <width>44</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Fecha:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_12">
+               <property name="geometry">
+                <rect>
+                 <x>1</x>
+                 <y>80</y>
+                 <width>69</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Empleado:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_13">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>120</y>
+                 <width>54</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Horario:</string>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="clienteCitaIn">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>0</y>
+                 <width>241</width>
+                 <height>22</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QDateEdit" name="fechaCitaIn">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>40</y>
+                 <width>241</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="calendarPopup">
+                <bool>true</bool>
+               </property>
+              </widget>
+              <widget class="QTimeEdit" name="horarioCitaIn">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>120</y>
+                 <width>241</width>
+                 <height>22</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="empleadoCitaIn">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>80</y>
+                 <width>241</width>
+                 <height>22</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QTableView" name="serviciosTableIn">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>160</y>
+                 <width>241</width>
+                 <height>251</height>
+                </rect>
+               </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::MultiSelection</enum>
+               </property>
+               <property name="selectionBehavior">
+                <enum>QAbstractItemView::SelectRows</enum>
+               </property>
+               <property name="showGrid">
+                <bool>false</bool>
+               </property>
+               <property name="sortingEnabled">
+                <bool>false</bool>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+               <property name="cornerButtonEnabled">
+                <bool>false</bool>
+               </property>
+               <attribute name="verticalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <attribute name="verticalHeaderHighlightSections">
+                <bool>false</bool>
+               </attribute>
+              </widget>
+             </widget>
+             <widget class="QTableView" name="citasTable">
+              <property name="geometry">
+               <rect>
+                <x>400</x>
+                <y>110</y>
+                <width>381</width>
+                <height>491</height>
+               </rect>
+              </property>
+              <property name="selectionMode">
+               <enum>QAbstractItemView::MultiSelection</enum>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectRows</enum>
+              </property>
+              <property name="sortingEnabled">
+               <bool>true</bool>
+              </property>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="verticalHeaderHighlightSections">
+               <bool>false</bool>
+              </attribute>
+             </widget>
+             <widget class="QPushButton" name="agendarBtn">
+              <property name="geometry">
+               <rect>
+                <x>30</x>
+                <y>550</y>
+                <width>341</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>20</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: white;
+border: none;
+background-color: #C2A062;
+border-radius: 10px;
+</string>
+              </property>
+              <property name="text">
+               <string>Agendar</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="citasPorFecha">
+              <property name="geometry">
+               <rect>
+                <x>400</x>
+                <y>70</y>
+                <width>31</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>20</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: white;
+border: none;
+background-color: #C2A062;
+border-radius: 10px;
+
+</string>
+              </property>
+              <property name="text">
+               <string>↻</string>
+              </property>
+             </widget>
+             <widget class="QDateEdit" name="fechaTabla">
+              <property name="geometry">
+               <rect>
+                <x>440</x>
+                <y>70</y>
+                <width>101</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">height: 25px;
+padding: 0px 5px;
+background: white;
+border-radius: 0px;
+font-size: 15;
+border: 1px solid #C2A062;
+</string>
+              </property>
+              <property name="calendarPopup">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="eliminarCita">
+              <property name="geometry">
+               <rect>
+                <x>690</x>
+                <y>70</y>
+                <width>91</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #ed6969	;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>Eliminar</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="loginPage">
+       <property name="styleSheet">
+        <string notr="true">background: #131313</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="loginImg">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>500</width>
+            <height>750</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: url(:/assets/assets/login_1.jpg);
+height: 750px;
+
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_3" native="true">
+          <property name="font">
+           <font>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel { color: white; }
+
+QLineEdit{
+	border: none;
+	border-bottom: 2px  solid rgba(255, 255, 255, 0.4);
+	color:white;
+}
+
+QLineEdit:focus{
+	border-bottom: 2px  solid rgba(255, 255, 255, 1);
+}
+
+QPushButton{
+	border: 2px solid rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:hover{
+	border: 2px solid #C2A062;
+	color: #C2A062;
+}
+
+</string>
+          </property>
+          <widget class="QLabel" name="logoImg">
+           <property name="geometry">
+            <rect>
+             <x>75</x>
+             <y>1</y>
+             <width>16</width>
+             <height>95</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>10</width>
+             <height>95</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>95</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>95</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="iniciarSesionLbl">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>210</y>
+             <width>201</width>
+             <height>49</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Inter UI</family>
+             <pointsize>22</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+             <underline>false</underline>
+             <strikeout>false</strikeout>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: #FFFFFF;</string>
+           </property>
+           <property name="text">
+            <string>Iniciar sesión</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="usuarioLbl">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>290</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Monaco</family>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgba(255,255,255,0.6);</string>
+           </property>
+           <property name="text">
+            <string>usuario:</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="usuarioLed">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>330</y>
+             <width>281</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>1000</width>
+             <height>200</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Inter UI</family>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::ClickFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>e.moncayo</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="contrasenaLbl">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>380</y>
+             <width>121</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Monaco</family>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgba(255,255,255,0.6);
+</string>
+           </property>
+           <property name="text">
+            <string>contraseña:</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="ingresarBtn">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>480</y>
+             <width>281</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Inter UI</family>
+             <pointsize>20</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Ingresar</string>
+           </property>
+           <property name="shortcut">
+            <string>Return</string>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+           <property name="default">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="errorLoginLbl">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>530</y>
+             <width>321</width>
+             <height>71</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Inter UI</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: #C2A062;
+</string>
+           </property>
+           <property name="text">
+            <string>El usuario no existe o la contraseña 
+introducida es incorrecta.</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="contrasenaLed">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>410</y>
+             <width>281</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>1000</width>
+             <height>200</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Inter UI</family>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::ClickFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>adminno</string>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="logoLbl">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>80</y>
+             <width>100</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

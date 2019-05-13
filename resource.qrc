@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/assets">
+        <file>assets/login_1.jpg</file>
+        <file>assets/login_2.jpg</file>
+        <file>assets/login_3.jpg</file>
+        <file>assets/login_4.jpg</file>
+        <file>assets/login_5.jpg</file>
+        <file>assets/login_6.jpg</file>
+        <file>assets/login_7.jpg</file>
+        <file>assets/login_8.jpg</file>
+        <file>assets/login_9.jpg</file>
+        <file>assets/login_10.jpg</file>
+        <file>assets/login_11.jpg</file>
+        <file>assets/login_12.jpg</file>
+        <file>assets/login_13.jpg</file>
+        <file>assets/login_14.jpg</file>
+        <file>assets/login_15.jpg</file>
+        <file>assets/login_16.jpg</file>
+        <file>assets/logo.png</file>
+        <file>assets/icon.png</file>
+    </qresource>
+</RCC>
